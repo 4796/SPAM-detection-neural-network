@@ -1,0 +1,8 @@
+torch>=2.2
+skorch>=0.15
+scikit-learn>=1.4
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+seaborn>=0.13
+jupyter>=1.0
