@@ -83,6 +83,17 @@ Model tačno prepoznaje 93.8% stvarnih spam poruka (recall), uz svega 4.5% lažn
 
 Feedforward neuronska mreža nad TF-IDF vektorima pokazala se kao efikasan i tačan pristup za detekciju spam poruka (F1 = 0.946, ROC-AUC = 0.986 na test skupu), uprkos relativnoj jednostavnosti arhitekture. Rezultati potvrđuju da je primena neuronskih mreža opravdana za ovaj zadatak detekcije cyber prevare - čak i minimalna mreža (1 skriveni sloj) postiže visoku tačnost kada je ulazna reprezentacija (TF-IDF) dovoljno informativna, što ukazuje da za jednostavnije tekstualne zadatke poput ovog kompleksnost modela nije glavni ograničavajući faktor.
 
+## Upotreba AI alata
+
+Za izradu ovog projekta korišćen je AI alat (Claude, Anthropic) kao pomoćno sredstvo za ubrzavanje rada, na sledeće načine:
+
+- **Planiranje projekta:** razrada početne teme u konkretan plan rada - struktura repozitorijuma, redosled koraka i slično.
+- **Predlozi i ideje:** predlozi oko izbora dataset-a, arhitekture modela i pristupa vektorizaciji teksta, kao i predlog opsega i vrednosti hiperparametara koje ima smisla testirati u `GridSearchCV` pretrazi i metrika relevantnih za neuravnotežen dataset (F1, ROC-AUC umesto same accuracy).
+- **Implementacija:** pisanje dela koda prema unapred definisanoj specifikaciji.
+- **Dokumentacija:** pomoć pri sastavljanju i formatiranju README fajla.
+
+Ključne stručne odluke (izbor pristupa, tumačenje rezultata, finalna konfiguracija modela) doneo je autor projekta; AI je korišćen kao alat koji ubrzava rutinske delove procesa, a ne kao zamena za razumevanje problema.
+
 ## Struktura repozitorijuma
 
 ```
